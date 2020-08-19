@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./CSS/animate.css">
+		<link rel="stylesheet" href="./CSS/reset.min.css">
+		<link rel="stylesheet" href="./CSS/swiper.min.css">
+		<link rel="stylesheet" href="./CSS/style.min.css">
+		<title>YuJin portfolio</title>
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,200,300,400,500,600|Poppins:100,200,300,400,500,600,700,800&display=swap&subset=korean" rel="stylesheet">
+	</head>
+
+	<body>
+		<div id="page-loader">
+			<div class="logo-box">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.51 19.17">
+					<g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1" d="M6.35,9.13v5.25H4.76V9.13L0,1.32H1.74L5.53,7.67h0L9.37,1.32H11.1Z"/><path class="cls-1" d="M15.57,14.63a4.67,4.67,0,0,1-1.3-.16,3.32,3.32,0,0,1-1-.44,2.83,2.83,0,0,1-.74-.68,3.45,3.45,0,0,1-.48-.86,3,3,0,0,1-.19-.77,6.56,6.56,0,0,1-.06-.92V5.11H13.3v5.68a3.45,3.45,0,0,0,.21,1.29,1.84,1.84,0,0,0,.75.92,2.4,2.4,0,0,0,1.34.34A2.32,2.32,0,0,0,17,13a2,2,0,0,0,.74-1,3.38,3.38,0,0,0,.17-1.18V5.11H19.4v5.7a6,6,0,0,1,0,.87,4.13,4.13,0,0,1-.17.75,3.64,3.64,0,0,1-.48.89,3,3,0,0,1-.76.69,3.65,3.65,0,0,1-1,.46A5,5,0,0,1,15.57,14.63Z"/><path class="cls-1" d="M24,16.46a2.65,2.65,0,0,1-.73,2,3.21,3.21,0,0,1-2.32.72,5.32,5.32,0,0,1-.81-.06A3.34,3.34,0,0,1,19.6,19V17.69a5.6,5.6,0,0,0,.59.12,3.86,3.86,0,0,0,.6,0,1.92,1.92,0,0,0,1.33-.38,1.56,1.56,0,0,0,.4-1.19V5.11H24ZM22.48,3V1.26H24V3Z"/><path class="cls-1" d="M27.12,3V1.26h1.51V3Zm0,11.43V5.11h1.51v9.27Z"/><path class="cls-1" d="M33.16,6.4h0a4.57,4.57,0,0,1,.56-.6,3.75,3.75,0,0,1,.69-.49,4,4,0,0,1,3-.27,2.57,2.57,0,0,1,1,.57,2.76,2.76,0,0,1,.65,1,4.33,4.33,0,0,1,.24,1.54v6.21H37.8v-6a2.6,2.6,0,0,0-.46-1.73A1.71,1.71,0,0,0,36,6.16a3,3,0,0,0-1.52.44,4.07,4.07,0,0,0-1.26,1.19v6.59H31.7V5.11h1.17Z"/><path class="cls-1" d="M42.89,1.32h1.69L42.86,6.14h-1.4Z"/><path class="cls-1" d="M47.13,7.58a1.08,1.08,0,0,0,.16.62,1.14,1.14,0,0,0,.44.4,3.06,3.06,0,0,0,.63.25L49.1,9c.35.08.68.17,1,.26a3,3,0,0,1,.86.43,2,2,0,0,1,.64.76,2.85,2.85,0,0,1,.25,1.26A2.73,2.73,0,0,1,51.56,13a2.5,2.5,0,0,1-.77.91,3.54,3.54,0,0,1-1.19.56,5.6,5.6,0,0,1-1.52.19,8.7,8.7,0,0,1-.93-.05c-.27,0-.52-.09-.73-.14s-.39-.11-.54-.17l-.37-.17V12.83a7.2,7.2,0,0,0,1.14.37,5.37,5.37,0,0,0,1.25.14,4,4,0,0,0,1-.1,2.3,2.3,0,0,0,.75-.29,1.44,1.44,0,0,0,.48-.47,1.35,1.35,0,0,0,.16-.67,1.16,1.16,0,0,0-.56-1.07,2.37,2.37,0,0,0-.6-.27l-.71-.2c-.33-.07-.66-.15-1-.25a3.42,3.42,0,0,1-.91-.41,2,2,0,0,1-.67-.72,2.36,2.36,0,0,1-.25-1.17,2.75,2.75,0,0,1,.26-1.26,2.5,2.5,0,0,1,.71-.89,3.06,3.06,0,0,1,1-.53,4.36,4.36,0,0,1,1.26-.18A6.47,6.47,0,0,1,50.26,5a7.37,7.37,0,0,1,1.2.37V6.67A10.38,10.38,0,0,0,50.3,6.3a6.07,6.07,0,0,0-1.21-.15,3.22,3.22,0,0,0-.89.11,1.66,1.66,0,0,0-.61.3,1,1,0,0,0-.35.45A1.48,1.48,0,0,0,47.13,7.58Z"/><path class="cls-1" d="M59.92,14.38H58.33V1.32H62a10,10,0,0,1,1.5.1,6,6,0,0,1,1.26.3A3.63,3.63,0,0,1,66.48,3,3.4,3.4,0,0,1,67.09,5a3.64,3.64,0,0,1-.4,1.75,3.38,3.38,0,0,1-1.14,1.27,5.45,5.45,0,0,1-1.83.76,10.09,10.09,0,0,1-2.44.26c-.44,0-.89,0-1.36-.06Zm0-6.82.68.06.66,0a8.66,8.66,0,0,0,1.91-.18A3.86,3.86,0,0,0,64.46,7a2.1,2.1,0,0,0,.73-.82A2.57,2.57,0,0,0,65.41,5,2,2,0,0,0,65,3.78,2.2,2.2,0,0,0,64,3a3.76,3.76,0,0,0-1-.22,9.61,9.61,0,0,0-1.27-.07H59.92Z"/><path class="cls-1" d="M84.41,6.34H84.3a5.36,5.36,0,0,0-1.06.1,4.37,4.37,0,0,0-1,.29,3.74,3.74,0,0,0-.82.5,2.52,2.52,0,0,0-.61.69v6.46H79.33V5.11H80.5l.29,1.47h0a3.44,3.44,0,0,1,.55-.67,4.06,4.06,0,0,1,.74-.55A3.6,3.6,0,0,1,83,5a3.81,3.81,0,0,1,1-.14h.38Z"/><path class="cls-1" d="M90.92,14.4a2.34,2.34,0,0,1-.6.15,6.14,6.14,0,0,1-.95.08,4,4,0,0,1-1.27-.18,2.35,2.35,0,0,1-.9-.52,2.11,2.11,0,0,1-.53-.81,3,3,0,0,1-.18-1.07V6.41H84.71V5.11h1.78V2.57H88V5.11h2.77v1.3H88v5.41a1.87,1.87,0,0,0,.09.59,1.32,1.32,0,0,0,.29.48,1.56,1.56,0,0,0,.52.31,2.37,2.37,0,0,0,.75.11,5,5,0,0,0,.64-.05,3.77,3.77,0,0,0,.62-.13Z"/><path class="cls-1" d="M98.35,1.44a5.8,5.8,0,0,0-.64-.09l-.61,0a2.86,2.86,0,0,0-.91.13,1.6,1.6,0,0,0-.68.4,1.92,1.92,0,0,0-.42.73,3.57,3.57,0,0,0-.15,1.1V5.11h2.77v1.3H94.94v8H93.43v-8H91.8V5.11h1.63V3.69A4.64,4.64,0,0,1,93.7,2,3.15,3.15,0,0,1,94.43.86,3,3,0,0,1,95.54.21,4.3,4.3,0,0,1,96.9,0a7.71,7.71,0,0,1,.87.05,3.15,3.15,0,0,1,.58.11Z"/><path class="cls-1" d="M110.09,14.38V.24h1.51V14.38Z"/><path class="cls-1" d="M114.69,3V1.26h1.51V3Zm0,11.43V5.11h1.51v9.27Z"/><ellipse class="cls-2" cx="123.24" cy="9.67" rx="3.78" ry="4.27"/><ellipse class="cls-2" cx="103.37" cy="9.67" rx="3.78" ry="4.27"/><ellipse class="cls-2" cx="72.68" cy="9.67" rx="3.78" ry="4.27"/></g></g>
+				</svg>
+				<div class="loading-bar">
+					<div class="loading-bar-inner"></div>
+				</div>
+			</div>
+		</div>
+
+		<div id="container">
+			<div class="header">
+				<div class="header-gnb">
+					<a href="#slider-section" class="header-gnb-inner">First</a><br>
+					<a href="#portfolio-section" class="header-gnb-inner">Portfolio</a>
+				</div>
+			</div>
+
+			<div id="slider-section" class="brochure">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slider-01">
+							<div class="video">
+								<video muted preload="metadata">
+									<source src="video/video01-m1.mp4" type="video/mp4">
+									브라우저가 비디오 태그를 지원하지 않습니다.
+								</video>
+								<div class="spinner"></div>
+							</div>
+							<div class="skil-inform">
+								<div class="skil-title">
+									<div class="skil-big-caption">ORDINARY MAGAZINE</div>
+									<div class="description">
+										<span>오프라인 매거진을 온라인 디지털 매거진화 시키는 작업을 했습니다.</span>
+										<span>Vue.js를 사용한 뼈대를 기반으로 모든 페이지의 화면구성을 하였습니다.</span>
+									</div>
+									<div class="link">
+										<a href="./view/ordinary.html" target="_blank">Preview</a>
+									</div>
+								</div>
+								<div class="skil-circle">
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="100">0</span>%
+										</div>
+									</div>
+									<div class="circle-shape"><span>HTML5 / SASS</span></div>
+									<div class="circle-shape"><span>Vue.js</span></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide slider-02">
+							<div class="video">
+								<video muted preload="metadata">
+									<source src="video/video02-m1.mp4" type="video/mp4">
+									브라우저가 비디오 태그를 지원하지 않습니다.
+								</video>
+								<div class="spinner"></div>
+							</div>
+							<div class="skil-inform">
+								<div class="skil-title">
+									<div class="skil-big-caption">신촌 맥주 축제</div>
+									<div class="description">
+										<span>2019년 신촌 맥주 축제의 리플렛을 대체하는 디지털 브로슈어입니다.</span>
+										<span>Vue.js를 사용한 뼈대를 기반으로 팀원들과 협업하여 페이지 화면구성을 하였습니다.</span>
+									</div>
+									<div class="link">
+										<a href="./view/sinchon.html" target="_blank">Preview</a>
+									</div>
+								</div>
+								<div class="skil-circle">
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="80">0</span>%
+										</div>
+									</div>
+									<div class="circle-shape"><span>HTML5 / SASS</span></div>
+									<div class="circle-shape"><span>Vue.js</span></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide slider-03">
+							<div class="video">
+								<video muted preload="metadata">
+									<source src="video/video03-m1.mp4" type="video/mp4">
+									브라우저가 비디오 태그를 지원하지 않습니다.
+								</video>
+								<div class="spinner"></div>
+							</div>
+							<div class="skil-inform">
+								<div class="skil-title">
+									<div class="skil-big-caption">HANAIN</div>
+									<div class="description">
+										<span>하나인 필러 홍보 브로슈어입니다.</span>
+										<span>기존에 있던 브로슈어에 랜딩 페이지 제작, 페이지 추가를 하였습니다.</span>
+									</div>
+									<div class="link">
+										<a href="./view/hanain01.html" target="_blank">Preview</a>
+									</div>
+								</div>
+								<div class="skil-circle">
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="60">0</span>%
+										</div>
+									</div>
+									<div class="circle-shape"><span>HTML5 / SASS</span></div>
+									<div class="circle-shape"><span>JavaScript</span></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide slider-04">
+							<div class="video">
+								<video muted preload="metadata">
+									<source src="video/video04-m1.mp4" type="video/mp4">
+									브라우저가 비디오 태그를 지원하지 않습니다.
+								</video>
+								<div class="spinner"></div>
+							</div>
+							<div class="skil-inform">
+								<div class="skil-title">
+									<div class="skil-big-caption">HANAIN</div>
+									<div class="description">
+										<span>하나인 필러 홍보 브로슈어입니다.</span>
+										<span>기존에 있던 브로슈어에 랜딩 페이지 제작, 페이지 추가를 하였습니다.</span>
+									</div>
+									<div class="link">
+										<a href="./view/hanain02.html" target="_blank">Preview</a>
+									</div>
+								</div>
+								<div class="skil-circle">
+									<div class="circle-shape">
+										<div>참여도</div>
+										<div class="value">
+											<span data-count="80">0</span>%
+										</div>
+									</div>
+									<div class="circle-shape"><span>HTML5 / SASS</span></div>
+									<div class="circle-shape"><span>JavaScript</span></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+
+			<div class="line-box">
+				<span class="line wow slideInDown"></span>
+			</div>
+
+			<div id="portfolio-section" class="content">
+				<a href="./view/aesop.html" target="_blank" class="content-inner list-05 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/aesop/main-banner01.jpg');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">쇼핑몰 홈페이지</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>JQuery</span></div>
+							<div class="percent">- 리디자인 사이트, 디자이너와 협력</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="100">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="./view/farmeya.html" target="_blank" class="content-inner list-05 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/dongsung.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">제약회사 홈페이지</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>JQuery</span></div>
+							<div class="percent">- 리디자인 사이트, 디자이너와 협력</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="100">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="http://www.decello.net" target="_blank" class="content-inner list-05 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/decello.jpg');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">쇼핑몰 홈페이지</div>
+							<div class="language"><span>ASP</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>JQuery</span></div>
+							<div class="percent">- 테마 자체 개발/ 디자인, 코딩, 프론트앤드 개발</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="100">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="http://keikei.kr" target="_blank" class="content-inner list-05 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/keikei.jpg');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">쇼핑몰 홈페이지</div>
+							<div class="language"><span>ASP</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>JQuery</span></div>
+							<div class="percent">- 테마 자체 개발/ 디자인, 코딩, 프론트앤드 개발</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="100">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="http://www.decello.net/myoffice/view/main/main.asp" target="_blank" class="content-inner list-05 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/myoffice.jpg');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">오피스 관리 홈페이지</div>
+							<div class="language"><span>ASP</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>JQuery</span></div>
+							<div class="percent">- 테마 자체 개발/ 디자인, 코딩, 프론트앤드 개발</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="100">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="http://moounga1.cafe24.com" target="_blank" class="content-inner list-05 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/moounga.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">일반 홈페이지</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>PHP</span></div>
+							<div class="percent">- 테마 자체 개발/ 일부 페이지 마크업</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="70">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="http://www.uffia.co.kr/botanic-rest/" target="_blank" class="content-inner list-04 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/uffia.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">일반 홈페이지</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>PHP</span></div>
+							<div class="percent">- 기존의 템플릿을 기반으로 하나의 페이지 리뉴얼</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="50">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="https://miwooinc.com/about/brihen.html" target="_blank" class="content-inner list-09 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/miwoo.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">일반 홈페이지</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>Cafe 24</span></div>
+							<div class="percent">- 테마 구매 / 일부 페이지 마크업</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="100">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<!--캡처 사이트
+				<a href="http://universe-a.co.kr" target="_blank" class="content-inner list-08 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/universe-a.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">일반 홈페이지</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span> / <span>PHP</span></div>
+							<div class="percent">- 테마 자체 개발 / 일부 페이지 마크업</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="60">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="./view/cbmc01.html" target="_blank" class="content-inner list-03 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/cbmc.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">디지털 영상 브로슈어</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>Vue.js</span></div>
+							<div class="percent">- 전화를 받으면 영상이 틀어지는 효과를 준 교회 홍보 영상 브로슈어</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="90">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="./view/estate.html" target="_blank" class="content-inner list-02 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/estate.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">디지털 브로슈어</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span></div>
+							<div class="percent">- 브로슈어 Version 1 기반으로 부동산 영업용 샘플 개발</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="90">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="./view/cbmc02.html" target="_blank" class="content-inner list-06 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/cbmc.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">디지털 브로슈어</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span></div>
+							<div class="percent">- 기존 브로슈어를 기반으로 일부분 수정</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="40">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="./view/hanain03.html" target="_blank" class="content-inner list-01 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/hanain.png');" width="130"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">디지털 영상 브로슈어</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>JavaScript</span></div>
+							<div class="percent">- 기존에 있던 브로슈어에 랜딩 페이지 제작, 페이지 추가</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="80">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="./view/tebah.html" target="_blank" class="content-inner list-07 wow fadeInUp">
+					<div class="content-inner-image" style="background-image:url('./images/logo/tebah.png');"></div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">디지털 브로슈어</div>
+							<div class="language"><span>HTML5</span> / <span>SASS(SCSS)</span> / <span>CSS3</span> / <span>Vue.js</span></div>
+							<div class="percent">- 회사소개 디지털 브로슈어</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="90">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>-->
+
+				<!--svg 구현
+				<a href="#" class="content-inner list-10 wow fadeInUp">
+					<div class="content-inner-image">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 85.81 18.58">
+							<g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1" d="M0,.59A.64.64,0,0,1,.39.16.71.71,0,0,1,.92,0a.64.64,0,0,1,.51.33L6.68,8.68,11.88.47a.8.8,0,0,1,.53-.41A.87.87,0,0,1,13,.11a.78.78,0,0,1,.37.41.94.94,0,0,1-.12.63L7.42,10.34v7.42a.81.81,0,0,1-.24.6.76.76,0,0,1-.53.2.78.78,0,0,1-.53-.2.88.88,0,0,1-.21-.6V10.34L.15,1.19A.68.68,0,0,1,0,.59Z"/><path class="cls-1" d="M22.11.23A.75.75,0,0,1,22.64,0a.74.74,0,0,1,.5.17.75.75,0,0,1,.24.6V12a5.48,5.48,0,0,0,1.16,3.56,4.68,4.68,0,0,0,3.83,1.64,4.61,4.61,0,0,0,3.8-1.64A5.4,5.4,0,0,0,33.33,12V.66a.66.66,0,0,1,.21-.5A.94.94,0,0,1,34.07,0a.73.73,0,0,1,.51.2.57.57,0,0,1,.24.5V12a6.66,6.66,0,0,1-1.54,4.5,6.06,6.06,0,0,1-4.91,2.08,6.09,6.09,0,0,1-4.94-2.08A6.66,6.66,0,0,1,21.89,12V.81A.76.76,0,0,1,22.11.23Z"/><path class="cls-1" d="M50.76.21a.76.76,0,0,1,.53-.2.79.79,0,0,1,.53.2.75.75,0,0,1,.24.6v13a4.73,4.73,0,0,1-1.21,3.3,4.48,4.48,0,0,1-3.58,1.5,4.64,4.64,0,0,1-3.62-1.47A4.5,4.5,0,0,1,42.5,14a.85.85,0,0,1,.21-.61.82.82,0,0,1,.53-.19.69.69,0,0,1,.51.15.57.57,0,0,1,.24.5,3.57,3.57,0,0,0,.79,2.39,3.17,3.17,0,0,0,2.49,1,3.07,3.07,0,0,0,2.45-1,3.83,3.83,0,0,0,.82-2.61V.81A.78.78,0,0,1,50.76.21Z"/><path class="cls-1" d="M62.12.21a.76.76,0,0,1,.53-.2.72.72,0,0,1,.5.2.75.75,0,0,1,.24.6v17a.75.75,0,0,1-.74.78.76.76,0,0,1-.53-.2.75.75,0,0,1-.22-.58V.81A.78.78,0,0,1,62.12.21Z"/><path class="cls-1" d="M73.91,0A1.07,1.07,0,0,1,75,.52l.82,1.2,8.45,14.07V.66a.63.63,0,0,1,.22-.5A.9.9,0,0,1,85,0a.86.86,0,0,1,.53.17.56.56,0,0,1,.24.48V17.52a.89.89,0,0,1-.65,1,.72.72,0,0,1-.94-.32l-1.35-2L74.71,2.76v15a.87.87,0,0,1-.24.65.71.71,0,0,1-.53.22.84.84,0,0,1-.53-.24.88.88,0,0,1-.22-.63V1C73.19.41,73.43.09,73.91,0Z"/></g></g>
+						</svg>
+					</div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">SVG animation</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="77">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content-inner list-11 wow fadeInUp">
+					<div class="content-inner-image">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.53 18.53">
+							<g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><circle class="cls-1" cx="9.27" cy="9.27" r="8.77"/><path class="cls-2" d="M4.28,6.24a.28.28,0,0,1,.16-.19A.34.34,0,0,1,4.68,6a.28.28,0,0,1,.22.15l2.34,3.7L9.55,6.18A.36.36,0,0,1,9.79,6a.47.47,0,0,1,.26,0,.42.42,0,0,1,.16.19.36.36,0,0,1-.06.27l-2.58,4.1v3.3a.36.36,0,0,1-.11.27.36.36,0,0,1-.23.08A.41.41,0,0,1,7,14.15a.44.44,0,0,1-.09-.27v-3.3L4.34,6.51A.29.29,0,0,1,4.28,6.24Z"/><path class="cls-2" d="M12.91,6.07A.32.32,0,0,1,13.14,6a.34.34,0,0,1,.35.36V12.1A2.08,2.08,0,0,1,13,13.57a2,2,0,0,1-1.6.66,2,2,0,0,1-1.6-.65,2,2,0,0,1-.52-1.39.33.33,0,0,1,.1-.27.32.32,0,0,1,.23-.09.35.35,0,0,1,.23.07.25.25,0,0,1,.11.22,1.53,1.53,0,0,0,.35,1.06,1.38,1.38,0,0,0,1.1.45,1.37,1.37,0,0,0,1.1-.45A1.69,1.69,0,0,0,12.81,12V6.34A.33.33,0,0,1,12.91,6.07Z"/></g></g>
+						</svg>
+					</div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">SVG animation</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="77">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>
+
+				<a href="#" class="content-inner list-12 wow fadeInUp">
+					<div class="content-inner-image">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 198.25 92.16">
+							<g id="레이어_2" data-name="레이어 2"><g id="레이어_1-2" data-name="레이어 1"><path class="cls-1 diamondSt" d="M0,91.66H18.42L30.26,69.57l5.27,18,4.38-6.94,3.51,6.5S56.58,40.62,56.14,43.69,66.67,88.43,66.67,88.43L79.39,59.92,93,88.87l13.16-86,16.67,84.65,14.47-40.27L150.88,88l13.59-25,14.92,23.24h18.86"/></g></g>
+						</svg>
+					</div>
+					<div class="caption">
+						<div class="caption-inform">
+							<div class="kind">SVG animation</div>
+						</div>
+					</div>
+					<div class="bottom-line" data-progress="77">
+						<div class="line01"></div>
+						<div class="line02"></div>
+					</div>
+				</a>-->
+			</div>
+		</div>
+
+		<!-- Vendor -->
+		<script src="./vendor/jquery-3.4.1.min.js"></script>
+		<script src="./vendor/swiper.js"></script>
+		<script src="./vendor/wow.min.js"></script>
+
+		<script>
+			function animateValue(id, start, end, duration) {
+				console.log();
+
+				var range = end - start;
+				var current = start;
+				var increment = end > start? 1 : -1;
+				var stepTime = Math.abs(Math.floor(duration / range));
+				// var obj = document.querySelector(id);
+				var timer = setInterval(function() {
+					current += increment;
+					id.innerHTML = current;
+					if (current == end) {
+						clearInterval(timer);
+					}
+				}, stepTime);
+			}
+
+			function videoEndedEvent(video) {
+				video.addEventListener('ended', function() {
+					mySwiper.slideNext(1500);
+				});
+			}
+
+			function videoSpinner(activeSlide) {
+				var video   = activeSlide.querySelector('video');
+				var spinner = activeSlide.querySelector('.spinner');
+
+				video.addEventListener("play", function() {
+					spinner.style.display = 'none';
+				});
+			}
+
+			var mySwiper = new Swiper ('.swiper-container', {
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'bullets',
+				},
+				loop: true,
+				on: {
+					init: function() {
+						var active  = this.slides[this.activeIndex];
+						var video   = active.querySelector('video');
+						var count   = active.querySelector('[data-count]');
+
+						if ( window.outerWidth >= 1024 ) {
+							video.play();
+							videoEndedEvent(video);
+							videoSpinner(active);
+						} else {
+							video.pause();
+						}
+
+						animateValue(count, 10, count.getAttribute('data-count'), 2000);
+					},
+					slideChange: function() {
+						var active   = this.slides[this.activeIndex],
+							previous = this.slides[this.previousIndex],
+							video    = active.querySelector('video'),
+							pVideo   = previous.querySelector('video'),
+							spinner  = active.querySelector('.spinner'),
+							count    = active.querySelector('[data-count]');
+
+						if ( window.outerWidth >= 1024 ) {
+							video.play();
+							pVideo.pause();
+							videoEndedEvent(video);
+							videoSpinner(active);
+						} else {
+							video.pause();
+							pVideo.pause();
+						}
+
+						animateValue(count, 10, count.getAttribute('data-count'), 2000);
+					}
+				}
+			});
+
+			/**
+			 * Animation Script
+			 * wow.js - https://wowjs.uk/docs.html
+			 */
+			var wow = new WOW({
+				offset: 300,
+				callback: function(box) {
+					box.classList.add('show');
+				}
+			});
+			wow.init();
+
+
+			/**
+			 * Header Script
+			 */
+			var headerGnb = document.querySelector('.header-gnb');
+			var headerGnbA = headerGnb.querySelectorAll('a');
+
+			for (var i = 0; i < headerGnbA.length; i++) {
+				var elm = headerGnbA[i];
+
+				elm.addEventListener('click', function(event) {
+					event.preventDefault();
+
+					var getSectionName = this.getAttribute('href').replace('#', '');
+					var findSection = document.querySelector('#'+getSectionName);
+					var sectionOffset = findSection.offsetTop;
+
+					$('html, body').stop().animate({
+						scrollTop: sectionOffset,
+					}, 1000);
+				});
+			}
+
+
+			/**
+			 * Progress Event Script
+			 */
+			function progressEvent(elm) {
+				var progress     = elm.querySelector('.bottom-line'),
+					progressData = progress.getAttribute('data-progress');
+
+				var line01 = progress.querySelector('.line01'),
+					line02 = progress.querySelector('.line02');
+
+				line01.style.width = progressData + '%';
+				line02.style.left  = progressData + '%';
+				/*지정한 값에 따라 %채워짐line02.innerHTML   = progressData + '%';*/
+			}
+
+			var portfolioItem = document.querySelectorAll('#portfolio-section .content-inner');
+
+			for ( var i = 0; i < portfolioItem.length; i++ ) {
+				var elm = portfolioItem[i];
+				progressEvent(elm);
+			}
+
+			/**
+			 * Page Loader
+			 */
+
+			function pageLoader() {
+				var pageLoader = document.querySelector('#page-loader');
+				var loadingBar = pageLoader.querySelector('.loading-bar-inner');
+				var timeOut;
+
+				loadingBar.classList.add('show');
+
+				var timeOut = setTimeout(function() {
+					pageLoader.classList.add('hide');
+					clearTimeout(timeOut);
+				}, 5000);
+			}
+			pageLoader();
+		</script>
+
+	</body>
+</html>
