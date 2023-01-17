@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script type="module" src="./javascript/index.js"></script>
+		<title>모각코 스터디 과제 02</title>
+	</head>
+
+	<style>
+		.concert { display: flex; flex-direction: column; width: 500px; margin: 0 auto; }
+		.concert .stage { width: 500px; height: 70px; margin-bottom: 20px; background: skyblue; }
+		.concert .seats { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 0; padding: 0; width: 100%; list-style: none; }
+		.concert .seats li { position: relative; width: 20px; height: 20px; margin-right: 5px; margin-bottom: 5px; background: #dedede; }
+		.concert .seats li.done { background: #5e1a9e; }
+		.concert .seats li.impossible { background: none; }
+		.concert .seats li:nth-child(20n) { margin-right: 0; }
+		.concert .seats li .tooltip { display: none; z-index: 1; position: absolute; top: 10px; left: 10px; width: max-content; height: 30px; padding: 0 10px; background: skyblue; text-align: center; line-height: 30px; word-break: keep-all; box-sizing: border-box; }
+	</style>
+
+	<body>
+		<div class="concert">
+			<h3>콘서트 예매 좌석</h3>
+
+			<div class="stage"></div>
+
+			<ul class="seats"></ul>
+		</div>
+	</body>
+</html>

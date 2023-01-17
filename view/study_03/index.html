@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script type="module" src="./javascript/index.js"></script>
+		<title>모각코 스터디 과제 03</title>
+	</head>
+
+	<style>
+		.apply { width: 600px; margin: 80px auto; }
+		.apply .bt_apply { display: flex; justify-content: center; align-items: center; width: 150px; height: 40px; margin: 0 0 10px 0; padding: 0; border-radius: 5px; background: #000; color: #fff; text-decoration: none; }
+		.apply .bt_apply.disabled { opacity: 0.5; pointer-events: none; }
+		.apply .tbl { width: 100%; height: 575px; overflow-y: scroll; }
+		.apply .tbl::-webkit-scrollbar { width: 6px; height: 6px; cursor: pointer; }
+		.apply .tbl::-webkit-scrollbar-track { box-shadow: inset 0 0 5px #dedede; }
+		.apply .tbl::-webkit-scrollbar-thumb { background: #B6B7E7; }
+		.apply .tbl .tbl_apply { width: 100%; border-spacing: 0px; border-collapse: separate; border-right: 1px solid #c1c1c1; }
+		.apply .tbl .tbl_apply th,
+		.apply .tbl .tbl_apply td { height: 40px; padding: 0 10px; border: 1px solid #c1c1c1; border-right: none; }
+		.apply .tbl .tbl_apply td { border-top: none; text-align: center; }
+	</style>
+
+	<body>
+		<div class="apply">
+			<h3>응모하기</h3>
+
+			<a class="bt_apply" href="javascript:void(0);" disabled>응모하기</a>
+
+			<div class="tbl">
+				<table class="tbl_apply">
+					<colgroup>
+						<col width="100px">
+						<col width="200px">
+						<col width="">
+					</colgroup>
+
+					<thead>
+						<tr>
+							<th>순서</th>
+							<th>당첨번호</th>
+							<th>응모시간</th>
+						</tr>
+					</thead>
+
+					<tbody>
+					<!--<tr>
+							<td class="ord">7</td>
+							<td class="win_num">123</td>
+							<td class="win_time">2022-02-02</td>
+						</tr> -->
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

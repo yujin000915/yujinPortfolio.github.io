@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//code.jquery.com/jquery-3.6.1.min.js"></script>
+		<script type="module" src="./javascript/index.js"></script>
+		<title>모각코 스터디 과제 04</title>
+	</head>
+
+	<style>
+		.notice_board { width: 800px; margin: 80px auto; }
+		.notice_board .tbl_board { width: 100%; border-spacing: 0px; border-collapse: separate; border-right: 1px solid #c1c1c1; }
+		.notice_board .tbl_board th,
+		.notice_board .tbl_board td { height: 40px; padding: 0 10px; border: 1px solid #c1c1c1; border-right: none; }
+		.notice_board .tbl_board th { background: #424242; color: #fff; }
+		.notice_board .tbl_board td { border-top: none; text-align: center; }
+	</style>
+
+	<body>
+		<div class="notice_board">
+			<h3>게시판</h3>
+
+			<table class="tbl_board">
+				<colgroup>
+					<col width="70px">
+					<col width="120px">
+					<col width="120px">
+					<col width="">
+					<col width="200px">
+				</colgroup>
+
+				<thead>
+					<tr>
+						<th>번호</th>
+						<th>아이디</th>
+						<th>제목</th>
+						<th>내용</th>
+						<th>작성일</th>
+					</tr>
+				</thead>
+
+				<tbody>
+				<!-- <tr>
+						<td>1</td>
+						<td>yujin</td>
+						<td>안녕하심</td>
+						<td>안녕하세요 모각코 과제4번에 대하여</td>
+						<td>2022-12-16</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
